@@ -1,0 +1,87 @@
+/**********GENERAL RULES******/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.flex{
+    display: flex;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.relative{
+    position: relative;
+    bottom: 0;
+   
+}
+/***COMMON RULES*****/
+.container{
+    width: 100%;
+    display: inline-block;
+}
+
+img{
+    height: 50px;
+}
+
+
+
+
+/****LEFT SIDE***************/
+
+.left_side{
+    width: 8%;
+    height: 100vh;
+    background-color: pink;
+    float: left;
+}
+
+.col_20 .spotify_section, .col_20 .user{
+    width: 100%;   
+}
+
+.spotify_section{
+    background-color: black;
+    color: white;
+}
+
+.user{
+    background-color: black;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: auto;
+
+    }
+
+    /*******CENTRAL SIDE********/
+    .central_side{
+        width: 92%;
+        background-color: yellow;
+        float: left;
+    }
+    .call_to_action{
+        width: 12%;
+    background-color: rgb(197, 11, 11);
+    height: 100px;
+    margin-right: 33px;
+    margin-top: 32px;
+    margin-left: auto;
+    }
+    .upgrade>h4{
+        color: white;
+        border: white solid 2px;
+        padding: 20px;
+       border-radius: 20px;
+    }
+    
