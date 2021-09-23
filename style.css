@@ -64,8 +64,8 @@ img{
 
     }
 
-    /*******CENTRAL SIDE********/
-    .central_side{
+    /*******CENTRAL SIDE TOP********/
+    .central_side_top{
         width: 92%;
         background-color: yellow;
         float: left;
@@ -84,4 +84,48 @@ img{
         padding: 20px;
        border-radius: 20px;
     }
-    
+
+    /****CENTRAL SIDE CENTER********/
+    .central_side_center{
+        width: 92%;
+        background-color: green;
+        float: left;
+    }
+
+    .categorie{
+        background-color: greenyellow;
+        width: 40%;
+        margin: 0px auto
+    }
+    .categorie a{
+        text-decoration: none;
+    }
+    .categorie li{
+        display: inline;
+        text-align: center;
+        padding: 11px;
+    }
+
+    .played{
+        width: 100%;
+        background-color: plum;
+        float: left;
+    }
+
+    .film{
+    background-color: #b0e0e6;
+    width: 100%;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+
+
+    .card{
+    background-color: rosybrown;
+    text-align: center;
+    width: 182px;
+    padding: 13px;
+    margin-top:0px;
+    }
