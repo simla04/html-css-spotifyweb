@@ -46,6 +46,10 @@ img{
     background-color: pink;
     float: left;
 }
+.col_20{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .col_20 .spotify_section, .col_20 .user{
     width: 100%;   
@@ -88,12 +92,12 @@ img{
     /****CENTRAL SIDE CENTER********/
     .central_side_center{
         width: 92%;
-        background-color: green;
+        background-color: black;
         float: left;
     }
 
     .categorie{
-        background-color: greenyellow;
+        background-color:black;
         width: 40%;
         margin: 0px auto
     }
@@ -108,24 +112,33 @@ img{
 
     .played{
         width: 100%;
-        background-color: plum;
-        float: left;
+        background-color: black;
+    
     }
 
+    .row{
+        display:flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        justify-content: space-between;
+
+
+    }
     .film{
-    background-color: #b0e0e6;
+    background-color: black;
     width: 100%;
     margin-left: 16px;
-    display: flex;
-    flex-direction: row;
-    float: left;
 }
-
-
     .card{
-    background-color: rosybrown;
+    background-color: black;
     text-align: center;
     width: 182px;
     padding: 13px;
     margin-top:0px;
+    }
+    .central_side_center h5,.central_side_center h3{
+        color: white;
+    }
+    .central_side_center p{
+        color: lightslategrey;
     }
