@@ -1,0 +1,37 @@
+/* ____RESET RULES__________________________ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ____COMMON RULES__________________________ */
+.flex{
+    display: flex;
+}
+
+/* ___  DEBUG _____________________________ */
+.bg-aqua{
+    background-color: aqua;
+}
+.bg-fuchsia{
+    background-color:fuchsia ;    
+}
+.bg-limegreen{
+    background-color:limegreen ;    
+}
+.bg-yellow{
+    background-color:yellow ;    
+}
+.bg-blueviolet{
+    background-color: blueviolet;    
+}
+.bg-gold{
+    background-color: gold;    
+}
+.bg-cornflowerblue{
+    background-color:cornflowerblue ;    
+}
+.bg-brown{
+    background-color: brown;    
+}
