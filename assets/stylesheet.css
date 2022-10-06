@@ -44,9 +44,40 @@ body{
 }
 /* ___ general tag _________________ */
 .container-web-app{
-
+    background-color: lightseagreen;
+    height: 100vh;
+    border: 5px dashed orange;
+    display: flex;
+    flex-direction: column;
 }
 .container-web-app .top-main{
+    background-color: chartreuse;
+    border: 3px dashed yellow;
+    display: flex;
+    height: 100%;
+}
+.top-main .aside{
+    border: 3px dashed yellow;
+    background-color: fuchsia;
 
 }
-.container-web-app
+.top-main .container-upgrade-films{
+    border: 3px dashed yellow;
+    width: 100%;
+}
+.top-main .upgrade{
+    position: sticky;
+    top: 0;
+}
+.top-main .main{
+    background-color: cornflowerblue;
+}
+
+.container-web-app .videoplayer{
+    position: sticky;
+    bottom: 0;
+    background-color: cadetblue;
+    border: 3px dashed yellow;
+    width: 100%;
+
+}
