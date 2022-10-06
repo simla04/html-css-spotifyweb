@@ -45,7 +45,7 @@ body{
 /* ___ general tag _________________ */
 .container-web-app{
     background-color: lightseagreen;
-    height: 100vh;
+    height: 100%;
     border: 5px dashed orange;
     display: flex;
     flex-direction: column;
@@ -59,6 +59,9 @@ body{
 .top-main .aside{
     border: 3px dashed yellow;
     background-color: fuchsia;
+    height: 100%;
+    position: sticky;
+    left: 0;
 
 }
 .top-main .container-upgrade-films{
@@ -66,18 +69,56 @@ body{
     width: 100%;
 }
 .top-main .upgrade{
+    width: 100%;
     position: sticky;
     top: 0;
+    background-color: rgba(255, 0, 0, 0.223);
+    padding: 1rem 0;
+    justify-content: flex-end;
 }
 .top-main .main{
     background-color: cornflowerblue;
+    overflow: auto;   
 }
-
+.main .menu{
+    justify-content: center;
+    margin: 0 auto;
+    width: 42%;
+    background-color: yellowgreen;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.main .dashboard-film{
+    padding: 1rem;
+}
+.dashboard-film .row-cards{
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+.row-cards .col-5{
+    flex-basis: calc(100%/5);
+    background-color: chocolate;
+    justify-content: space-between;
+    border: 2px dashed ;
+}
+.row-cards .card{
+    width: 90%;
+    height: 14rem;
+    background-color: aquamarine;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+.point-mnu .min-border{
+    width: 50%;
+    height: 3px;
+    background-color: red;
+    padding: 2px;
+}
 .container-web-app .videoplayer{
-    position: sticky;
+    position: fixed;
     bottom: 0;
     background-color: cadetblue;
     border: 3px dashed yellow;
     width: 100%;
-
 }
