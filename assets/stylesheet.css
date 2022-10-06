@@ -38,8 +38,15 @@
 .border{
     border: darkblue 2px dashed;
 }
-/* ___main tag________ */
+/* ___main tag_____________________ */
 body{
     font-family: 'Roboto', sans-serif;
 }
+/* ___ general tag _________________ */
+.container-web-app{
 
+}
+.container-web-app .top-main{
+
+}
+.container-web-app
