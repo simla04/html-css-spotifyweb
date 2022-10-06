@@ -35,25 +35,11 @@
 .bg-brown{
     background-color: brown;    
 }
+.border{
+    border: darkblue 2px dashed;
+}
 /* ___main tag________ */
-
-header{
-    position:fixed;
-    top:0;
-    width:100%;
-    text-align: right;
-    padding: 2rem;
-}
-.aside{
-    position: fixed;
-    left: 0;
-    height: 100%;
-    padding: 2rem;
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 2rem;
-}
