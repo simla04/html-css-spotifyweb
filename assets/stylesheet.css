@@ -11,7 +11,7 @@
 }
 
 /* ___  DEBUG _____________________________ */
-.bg-aqua{
+/* .bg-aqua{
     background-color: aqua;
 }
 .bg-fuchsia{
@@ -35,46 +35,53 @@
 .bg-brown{
     background-color: brown;    
 }
-.border{
-    /* border: darkblue 2px dashed; */
-}
+
 /* ___main tag_____________________ */
 body{
     font-family: 'Roboto', sans-serif;
 }
 /* ___ general tag _________________ */
 .container-web-app{
-    background-color: lightseagreen;
+    /* background-color: lightseagreen; */
     height: 100%;
     /* border: 5px dashed orange; */
     display: flex;
     flex-direction: column;
 }
 .container-web-app .top-main{
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     /* border: 3px dashed yellow; */
     display: flex;
     height: 100%;
 }
 .top-main .aside{
-        /* border: 3px dashed yellow; */
-        background-color: fuchsia;
         height: 100vh;
         position: sticky;
         left: 0;
         top: 0;
-
+        width: 250px;
+        background-color: rgba(0, 0, 0, 1);
+        color: rgba(111, 111, 111, 1);
+        font-size: 13px;
+        line-height: 23px;
+        padding-left: 3px;
+}
+.aside h5, .videoplayer{
+    font-weight: 900;
+    font-size: 13px;
+    margin-top: 6px;
 }
 .top-main .container-upgrade-films{
     /* border: 3px dashed yellow; */
+    background-color: rgba(0, 0, 0, 1);
     width: 100%; 
 }
 .top-main .upgrade{
     width: 100%;
     position: sticky;
     top: 0;
-    background-color: rgba(255, 0, 0, 0.267);
-    padding: 2rem 0;
+    background-color: rgba(3, 6, 14, 0.689);
+    padding: 1rem 0;
     justify-content: flex-end;
 }
 .upgrade button{
@@ -87,7 +94,7 @@ body{
     margin-right: 10px;
 }
 .top-main .main{
-    background-color: cornflowerblue;
+    background-color: rgba(20, 25, 34, 1);
     overflow-y: auto;
     width: 100%;
 }
@@ -136,20 +143,29 @@ body{
     height: 3px;
     background-color: greenyellow;
     padding: 2px;
-    margin: 0 auto;
+    margin: 4px auto;
+    border-radius: 20px;
 }
 .container-web-app .videoplayer{
     position: fixed;
     bottom: 0;
-    background-color: cadetblue;
+    background-color:rgba(40, 40, 40, 1);
     /* border: 3px dashed yellow; */
     width: 100%;
     justify-content: space-between;
+    color: white;
+    padding: 0 6px;
 }
-.videoplayer div{
-    padding: 1rem 0;
+.video-left div{
+    padding: 0.3rem 0.9rem 0.3rem 0;
+    display: inline-block;
+    vertical-align: middle;
+    
 }
-
+.tasti i{
+        padding: 0 1rem;
+        margin: 0 auto;
+    }
 /* ___aside_____________ */
 img{
     height: 50px;
@@ -160,7 +176,8 @@ img{
     
 .col_20{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    height: calc(100vh-63px);
     }
 .col_20 .spotify_section, .col_20 .user{
     width: 100%;   
@@ -182,6 +199,16 @@ img{
 .dashboard-film{
     padding: 1rem;
 }
+.dashboard-film .title-row{
+    font-size:23px;
+    font-weight: bold;
+    color: white;
+}
+.title-row h4{
+    color: rgba(111, 111, 111, 1);
+    font-size: 13px;
+    padding: 0.5rem 0 1rem 0;
+}
 .dashboard-film .row-cards{
     width: 100%;
     flex-wrap: wrap;
@@ -199,6 +226,12 @@ img{
     text-align: center;
     color: white;    
 }
+ .row-cards h5, .main .menu{
+    color: white;
+}
+.row-cards p{
+    color: rgba(111, 111, 111, 1);
+}
 /* ------------------------------------------------------------ */
 .card .image{
     margin-bottom: 2px;
@@ -214,7 +247,6 @@ img{
     align-items: center;
 }
 .card .text-card{
-    /* background-color: yellow; */
     color: black;
     padding-top: 8px;
 }
@@ -226,4 +258,275 @@ img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
+}
+
+.playlist ul{
+    margin-top: 7px;   
+}
+.playlist li{
+    list-style: none;
+}
+.left_side img{
+    height: 40px;
+}
+    
+.col_20{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 63px);
+    }
+.col_20 .spotify_section, .col_20 .user{
+    width: 100%;   
+    }
+.spotify_section{
+    background-color: black;
+    color: white;
+    }
+
+    .spotify_section .icon{
+        height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.user{
+    background-color: black;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: auto;
+    min-height: 100px;
+    }
+.video-left{
+    display: flex;
+}
+.line-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line-time .line-time-to-play{
+    width: 74%;
+    background-color: rgba(111, 111, 111, 1);
+    height: 5px;
+    margin-top: 4px;
+    border-radius: 27px;
+}
+.fa-circle-play:before, .fa-play-circle:before {
+    content: "\f144";
+    font-size: 35px;
+}
+.video-center{
+display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.video-center .tasti{
+    display: flex;
+    align-content: center;
+    margin: 0 auto;
+    /* background-color: red; */
+    padding: 6px 0px 1px 0px;
+    align-items: center;
+}
+.line-time-to-play .line-time-played{
+    width: 300px;
+    height: 100%;
+    color: rgba(4, 13, 7, 0.957);
+}
+
+.time-left, .time-right{
+    font-size: 12px;
+    padding: 0 1rem;
+}
+
+.icon img{
+    height: 45px;
+    padding-right: 32px;
+}
+.option .home img, .option .cerca img,  .option .libreria img, .install img{
+    height: 23px;
+    margin-top: 1px;
+    border-left: 3px greenyellow solid;
+    padding-left: 6px;}
+.new_playlist .fa-plus-square:before, .fa-square-plus:before {
+    content: "\f0fe";
+    font-size: 49px;
+}
+.fa-plus-square:before, .fa-square-plus:before {
+    content: "\f0fe";
+    vertical-align: middle;
+}
+.install_container{
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    color: rgba(111, 111, 111, 1);
+}
+.install img{
+    padding-right: 10px;
+}
+.user_name {
+    /* vertical-align: middle; */
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    padding: 16px 0;
+}
+.video-right{
+    display: flex;
+    width: 14%;
+    align-items: center;
+    justify-content: space-around;
+}
+.video-right .volume-max{
+        width: 144px;
+        background-color: rgba(111, 111, 111, 1);
+        height: 5px;
+        border-radius: 27px;
+}
+.video-left .icon{
+    display: flex;
+    flex-direction: column;
+}
+/* ______MEDIA Q_________________________________________- */
+
+@media only screen and (max-width: 600px) {
+
+
+    .row-cards .col-5{
+        width: calc(100%/2);
+        /* background-color: chocolate; */
+        justify-content: space-between;
+        /* border: 2px dashed ; */
+        padding: 0.5rem 0;
+        display: flex;
+        padding-right: 11px;
+    }
+    .new_playlist, .option span, .user span, hr{
+        display: none;
+    }
+   .top-main .aside {
+        width: 48px;
+    }
+    .main .menu {
+        justify-content: center;
+        margin: 0 auto;
+        width: 95%;
+        /* background-color: yellowgreen; */
+        justify-content: center;
+        /* padding: 1rem 0; */
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
+    .dashboard-film .title-row {
+        font-size: 19px;
+        /* font-weight: bold; */
+        /* color: white; */
+    }
+    .text-card h5{
+        font-size: 12px;
+    }
+    .card p {
+        font-size: 9px;
+        padding: 6px;
+        font-weight: 900;
+    }
+    .main .dashboard-film {
+        padding: 8px;
+    }
+    .video-left {
+        display: flex;
+        width: 20%;
+        font-size: 9px;
+        align-items: center;
+    }
+    .video-left img {
+        height: 25px;
+    }
+    
+    .video-center {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        font-size: 9px;
+    }
+    .video-left div {
+        padding: 0.3rem 6px 0.3rem 0;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .video-center .tasti {
+        display: flex;
+        align-content: center;
+        /* margin: 0 auto; */
+        /* background-color: red; */
+        /* padding: 6px 0px 1px 0px; */
+        align-items: center;
+        font-size: 10px;
+    }
+    .tasti i {
+        padding: 2px 10px;
+        margin: 0 auto;
+    }
+    .fa-circle-play:before, .fa-play-circle:before {
+        content: "\f144";
+        font-size: 28px;
+    }
+    .time-left, .time-right {
+        font-size: 11px;
+        padding: 0 5px;
+    }
+    .video-right {
+        display: flex;
+        width: 28%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .video-right i{
+        font-size: 11px;
+    }
+    .video-right .volume-max {
+        width: 48%;
+        background-color: rgba(111, 111, 111, 1);
+        height: 4px;
+        border-radius: 27px;
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+    .row-cards .col-5{
+        width: calc(100%/4);
+        /* background-color: chocolate; */
+        justify-content: space-between;
+        /* border: 2px dashed ; */
+        padding: 0.5rem 0;
+        display: flex;
+        padding-right: 11px;
+    }
+    .main .menu {
+        justify-content: center;
+        margin: 0 auto;
+        width: 95%;
+        /* background-color: yellowgreen; */
+        justify-content: center;
+        /* padding: 1rem 0; */
+        flex-wrap: wrap;
+        font-size: 10px;
+
+
+
 }

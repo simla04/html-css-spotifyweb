@@ -9,12 +9,10 @@
     <title>Spotify__Web</title>
 </head>
 <body>
-
-
     <div class="container-web-app">
         <div class="top-main">
             <div class="aside">
-                <div class="col_20vw">
+                <div class="col_20">
                     <div class="spotify_section">
                         <div class="icon">
                             <img src="./assets/img/logo.svg" alt="logo">
@@ -34,7 +32,8 @@
                         </div>
                         <div class="playlist">
                             <div class="new_playlist">
-                                <img src="./assets/img/search.svg" alt=""> <span>Crea Playlist</span></div>
+                                <h5>PLAYLIST</h5>
+                                <i class="fa-regular fa-square-plus"></i> <span>Crea Playlist</span>
                                 <ul>
                                     <li>Nuova Playlist</li>
                                     <li>Nuova Playlist</li>
@@ -44,23 +43,25 @@
                                     <li>Nuova Playlist</li>
                                     <li>Nuova Playlist</li>
                                 </ul>
+                            </div>
                         </div>
-                    </div>        
+                    </div>      
                     <div class="user">
                         <div class="install">
-                            <img src="./assets/img/download.svg" alt="">
-                            <span>Installa app</span>
+                            <div class="install_container">
+                                <img src="./assets/img/download.svg" alt="">
+                                <span>Installa app</span>
+                            </div>
+                            
                             <hr>
                             <div class="user_name">
                                 <img src="./assets/img/profile.svg" alt=""> <span>John Doe</span>
                             </div>
-        
                         </div>
-        
                     </div>
-        
-                </div>                
-            </div nv>
+                </div>
+            </div>
+
             <div class="container-upgrade-films">
                 <div class="upgrade flex">
                     <button class="btn">EFFETTUA L'UPGRADE</button>
@@ -93,15 +94,11 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="dashboard-film bg-blueviolet">
-
                         <div class="title-row">
                             Recently played
                         </div>
-
                         <div class="row-cards flex">
-                                                        
                             <div class="col-5">
                                 <div class="card">
                                     <div class="complex flex">
@@ -115,7 +112,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="col-5">
                                 <div class="card">
                                     <div class="complex flex">
@@ -169,7 +165,7 @@
                                 </div>
                             </div>
                             <div class="col-5">
-                                <div class="card">
+                            <div class="card">
                                     <div class="complex flex">
                                         <div class="image">
                                             <img src="./assets/img/sinister.jpeg" alt="">
@@ -179,27 +175,23 @@
                                             <p>Subtitle</p>
                                         </div> 
                                     </div>
-                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
-
-
                     <div class="dashboard-film bg-blueviolet">
 
-                        <div class="title-row">
-                            Creato per John Doe 
-                            <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
-                        </div>
-
-                        <div class="row-cards flex">
-                                                        
-                            <div class="col-5">
-                                <div class="card">
-                                    <div class="complex flex">
-                                        <div class="image">
-                                            <img src="./assets/img/radar.jpeg" alt="">
-                                        </div>
+                    <div class="title-row">
+                        Creato per John Doe 
+                        <h4>Più ascolti, più accurati saranno isuggerimenti.</h4>
+                    </div>
+                    <div class="row-cards flex">
+                        <div class="col-5">
+                            <div class="card">
+                                <div class="complex flex">
+                                    <div class="image">
+                                        <img src="./assets/img/radar.jpeg" alt="">
+                                    </div>
                                         <div class="text-card">
                                             <h5>Release Radar</h5>
                                         </div> 
@@ -219,11 +211,8 @@
                                     </div>
                                 </div>
                             </div>
-                                                        
-                            
                         </div>
                     </div>
-
                     <div class="dashboard-film bg-blueviolet">
 
                         <div class="title-row">
@@ -260,60 +249,69 @@
                                     </div>
                                 </div>
                             </div>
-                                                        
-                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- footer -->
+        <div class="videoplayer flex">
+            <div class="video-left">
+                <div class="sinister">
+                    <img src="./assets/img/sinister.jpeg" alt="film sinister">
+                </div>
+                <div class="film-play-title">
+                    <h5>Sinister</h5>
+                    <p>Brano nome</p>          
+                </div>
+                <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                    
+                        <i class="fa-regular fa-folder"></i>                        
+                    </div>
+                </div>
+
+            <div class="video-center">
+                <div class="tasti">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="line-time">
+                    <div class="time-left">
+                        0:25
+                    </div>
+                    <div class="line-time-to-play">
+                        <div class="line-time-played">
+
+                        </div>
+                        <div class="circle">
+                            <!-- div con border readius che appare con hover -->
                         </div>
                     </div>
-
-
-
+                    <div class="time-right">
+                        0:25
+                    </div>
                 </div>
             </div>
-            </div>
-    <!-- footer -->
-        <div class="videoplayer flex">
-            <div class="video-left bg-fuchsia">video
-                
-            </div>
+            <div class="video-right">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-max">
+                    <div class="volume-scelto">
 
-            <div class="video-center bg-fuchsia">video</div>
+                    </div>
+                    <div class="cerchio">
 
-            <div class="video-right bg-fuchsia">video</div>
-        </div>
-    </div>
-
-
-
-
-
-
-<!-- <header class="upgrade bg-brown">
-    header
-    <div class="button">
-        <button class="btn">EFFETTUA L'UPGRADE</button>
-    </div>
-</header>
-<div class="aside bg-gold">
-sidebar
-</div>
-<main class="film bg-cornflowerblue">
-    main
-    <div class="container-films">
-        <div class="row">
-            <div class="col">
-                <div class="card">
-
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">     
-        </div>
     </div>
-</main> -->
-
-<!-- <footer class="videoplayer bg-blueviolet">
-    videoplayer
-</footer> -->
-
 </body>
 </html>
