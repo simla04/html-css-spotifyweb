@@ -66,7 +66,7 @@ body{
         line-height: 23px;
         padding-left: 3px;
 }
-.aside h5, .videoplayer{
+.aside .h5, .videoplayer{
     font-weight: 900;
     font-size: 13px;
     margin-top: 6px;
@@ -117,7 +117,6 @@ body{
 .dashboard-film .row-cards{
     width: 100%;
     flex-wrap: wrap;
-    
 }
 .row-cards .col-5{
     width: calc(100%/5);
@@ -204,7 +203,7 @@ img{
     font-weight: bold;
     color: white;
 }
-.title-row h4{
+.title-row .h4{
     color: rgba(111, 111, 111, 1);
     font-size: 13px;
     padding: 0.5rem 0 1rem 0;
@@ -226,7 +225,7 @@ img{
     text-align: center;
     color: white;    
 }
- .row-cards h5, .main .menu{
+.row-cards .h5, .main .menu{
     color: white;
 }
 .row-cards p{
@@ -282,7 +281,6 @@ img{
     background-color: black;
     color: white;
     }
-
     .spotify_section .icon{
         height: 100px;
     display: flex;
@@ -405,7 +403,7 @@ display: flex;
     .new_playlist, .option span, .user span, hr{
         display: none;
     }
-   .top-main .aside {
+    .top-main .aside {
         width: 48px;
     }
     .main .menu {
@@ -423,7 +421,7 @@ display: flex;
         /* font-weight: bold; */
         /* color: white; */
     }
-    .text-card h5{
+    .text-card .h5{
         font-size: 12px;
     }
     .card p {
@@ -443,7 +441,6 @@ display: flex;
     .video-left img {
         height: 25px;
     }
-    
     .video-center {
         display: flex;
         flex-direction: column;
@@ -491,20 +488,6 @@ display: flex;
         height: 4px;
         border-radius: 27px;
     }
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -526,7 +509,5 @@ display: flex;
         /* padding: 1rem 0; */
         flex-wrap: wrap;
         font-size: 10px;
-
-
-
+    }
 }
